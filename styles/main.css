@@ -13,7 +13,7 @@
 :root {
     /* variáveis css */
     --color-background: #f0f0f7;
-    --color-primary-lighter: #9871f5;
+    --color-primary-lighter: #9871F5;
     --color-primary-light: #916bea;
     --color-primary: #8257e5;
     --color-primary-dark: #774dd6;
@@ -84,4 +84,10 @@ textarea {
     width: 90vw;
     /* width = largura */
     max-width: 700px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /* todo 1rem vai ser relativo a 10px */
+    }
 }
