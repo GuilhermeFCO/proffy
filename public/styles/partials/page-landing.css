@@ -85,7 +85,7 @@
 
 /* @media ("regra") utilizado para validar as configurações somente se a regra for seguida */
 
-@media (max-width: 699px){
+@media (max-width: 1000px){
     :root {
         font-size: 40%; /* modificar as medidas rem */
     }

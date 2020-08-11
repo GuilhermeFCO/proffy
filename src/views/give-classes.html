@@ -31,7 +31,7 @@
         </header>
 
         <main>
-            <form action="" id="create-class">
+            <form action="/save-classes" id="create-class" method="POST">
                 <fieldset>
                     <legend>Seus dados</legend>
 
@@ -63,7 +63,7 @@
                         <select name="subject" id="subject" required>
                             <option value="">Selecione uma opção</option>
                             {%for subject in subjects%}
-                                <option value="{{loop.index}}">
+                                <option value="{{loop.index0}}">
                                     {{subject}}
                                 </option>
                             {%endfor%}
@@ -87,7 +87,7 @@
                             <select name="weekday[]" required>
                                 <option value="">Selecione uma opção</option>
                                 {%for weekday in weekdays%}
-                                    <option value="{{loop.index0}}">
+                                    <option value="{{loop.index}}">
                                     {{weekday}}
                                     </option>
                                 {%endfor%}
@@ -100,8 +100,8 @@
                         </div>
 
                         <div class="input-block">
-                            <label for="time_too">Até</label>
-                            <input type="time" name="time_too[]" required>
+                            <label for="time_to">Até</label>
+                            <input type="time" name="time_to[]" required>
                         </div>
                     </div>
                 </fieldset>
